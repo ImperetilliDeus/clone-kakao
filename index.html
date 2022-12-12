@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- BEM : Block Element Modifier
      -->
-    <div id="status_bar">
-        <div class="status_bar__column">
+    <div class="status-bar">
+        <div class="status-bar__column">
             <span>No Service</span>
             <!-- 와이파이 아이콘 -->
             <i class="fa-solid fa-wifi"></i>
         </div>
-        <div class="status_bar__column">
+        <div class="status-bar__column">
             <span>18:43</span>
         </div>
-        <div class="status_bar__column">
+        <div class="status-bar__column">
             <span>100%</span>
             <!-- 배터리 아이콘 -->
-            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
             <!-- 충전중 아이콘 -->
             <i class="fa-solid fa-bolt-lightning"></i>
         </div>
     </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KoKoa Clone</h1>
+        <p class="welcome-header__text">If you hava a Kokoa Account, log in with your email or phone number.</p>
+    </header>
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="Password" />
+        <input type="submit">
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
     <!-- fontawesome 스크립트 -->
     <script src="https://kit.fontawesome.com/0366f46b5c.js" crossorigin="anonymous"></script>
 </body>
