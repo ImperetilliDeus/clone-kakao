@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
 
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/* Screens */
+@import "screens/login.css";
+
 body{
+    height: 1000vh;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -27,50 +34,4 @@ body{
 
 }
 
-#login-form{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    margin:0px 30px;
 
-}
-#login-form input{
-    border: none;
-    padding: 15px 0px;
-    font-size: 18px;
-    
-    margin-bottom: 25px;
-    
-}
-
-/* html태그 속성선택자 */
-#login-form input:not([type="submit"]){
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-}
-
-/* 가상선택자 */
-#login-form input::placeholder{
-    color: rgba(0, 0, 0, 0.4);
-}
-
-#login-form input:focus{
-    border-color: var(--maxident);
-}
-
-/* html태그 속성선택자 */
-#login-form input[type="submit"]{
-    background-color: var(--maxident);
-    padding: 15px 0px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-#login-form a{
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    font-size: 13px;
-    /* 색 상속, 부모요소로부터 색 상속받아서 검정색됨 */
-}
