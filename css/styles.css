@@ -10,12 +10,12 @@
 @import "screens/login.css";
 
 body{
-    height: 1000vh;
+    height: 100rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .welcome-header{
-    margin: 90px 0px;
+    padding: 90px 0px;
     text-align:center;
     display: flex;
     flex-direction: column;
